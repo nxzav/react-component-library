@@ -1,0 +1,21 @@
+.badges {
+  display: flex;
+  margin-bottom: 1rem;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.badge.square {
+  border-radius: 4px;
+}
+
+.badge.pill {
+  border-radius: 999px;
+}

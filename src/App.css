@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+:root {
+  --font-pr: 'Alfa Slab One', system-ui, -apple-system, sans-serif;
+  --font-sd: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-pr: #61DBFB;
+  --color-en: #eae5ff;
+  --color-tx: #353535;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-pr);
+  font-weight: normal;
+  color: var(--color-tx);
+}
+
+header {
+  color: var(--color-pr);
+  box-shadow: 0 2px 6px #00000019;
+}
+
+.header {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.header > h1 {
+  font-size: 1.625rem;
+  color: var(--font-pr);
+}
+
+.title {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 800px;
+}
+
+.component {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid #0002;
+  box-shadow: 0 4px 0 #0002;
+}
+
+.component-title {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  width: fit-content;
+  background: var(--color-en);
+  border-radius: 70% 30% 75% 25% / 65% 30% 70% 35%;
+  font-size: 1.625rem;
+}
+
+@media (min-width: 480px) {
+  .component {
+    box-shadow: 6px 6px #0002;
+  }
+}
