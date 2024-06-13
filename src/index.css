@@ -10,10 +10,16 @@ body {
 }
 
 footer {
-  padding: 4px 0;
+  padding: 10px 0;
   text-align: center;
   width: 100%;
   position: fixed;
   bottom: 0;
+  backdrop-filter: blur(3px);
   box-shadow: 0 -1px 6px #0002;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
 }
