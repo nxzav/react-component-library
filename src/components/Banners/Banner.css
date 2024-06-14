@@ -1,0 +1,17 @@
+.banner {
+  display: grid;
+  margin-bottom: 1rem;
+  grid-template-columns: 24px 1fr;
+  row-gap: 0.5rem;
+  padding: 1rem;
+  font-size: 0.875rem;
+  border-radius: 6px;
+}
+
+.banner svg {
+  margin-top: 2px;
+}
+
+.banner-header {
+  font-weight: 600;
+}

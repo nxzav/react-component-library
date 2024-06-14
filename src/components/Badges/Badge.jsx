@@ -1,17 +1,19 @@
 /* eslint-disable react/prop-types */
-import { badgeColors } from '../colors';
+import { badgeColors } from './colors';
 import './Badge.css';
 
-export default function Badge({ children, color = 'gray', form = 'square' }) {
-  form === 'pill' ? 'pill' : 'square';
+function Badge({ children, color = 'gray', shape = 'square' }) {
+  shape === 'pill' ? 'pill' : 'square';
   const style = {
     color: badgeColors[color].txt,
     backgroundColor: badgeColors[color].bg,
   };
 
   return (
-    <p style={style} className={`badge ${form}`}>
+    <p style={style} className={"badge " + shape}>
       {children}
     </p>
   );
 }
+
+export default Badge;

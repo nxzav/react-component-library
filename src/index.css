@@ -2,24 +2,15 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, sans-serif;
-}
-
-footer {
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  backdrop-filter: blur(3px);
-  box-shadow: 0 -1px 6px #0002;
-}
-
-footer a {
-  color: #000;
-  text-decoration: none;
 }
