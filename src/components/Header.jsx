@@ -18,6 +18,12 @@ export default function Header() {
           <li>
             <a href="#cards">CARDS</a>
           </li>
+          <li>
+            <a href="#testimonials">TESTIMONIALS</a>
+          </li>
+          <li>
+            <a href="#tooltips">TOOLTIPS</a>
+          </li>
         </ul>
       </nav>
     </header>

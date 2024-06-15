@@ -11,7 +11,6 @@ function TestimonialNoPic({ children, name, position }) {
           src={companyLogo}
           alt="Company logo"
         />
-        {/* <p style={{fontSize: '0.75rem'}}>Image extracted from Unsplash</p> */}
         <p className="testimonial-no-pic-quote">{children}</p>
         <p className="testimonial-no-pic-name">
           {name}{' '}

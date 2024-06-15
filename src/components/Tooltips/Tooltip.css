@@ -1,0 +1,55 @@
+.tooltips-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.tooltip {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 380px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  row-gap: 0.5rem;
+  border-radius: 8px;
+  overflow: visible;
+  background-color: #dddddd;
+  color: #e8edff;
+  font-size: 0.875rem;
+  z-index: 1;
+}
+
+.tooltip-icon {
+  align-self: top;
+  font-size: 1.1rem;
+}
+
+.tooltip-header {
+  font-weight: 500;
+}
+
+.tooltip-body {
+  font-weight: 300;
+}
+
+.tooltip-shape {
+  position: absolute;
+  left: 15%;
+  bottom: -12px;
+  height: 24px;
+  width: 24px;
+  background-color: #dddddd;
+  z-index: -1;
+  rotate: 45deg;
+}
+
+@media (min-width: 768px) {
+  .tooltips-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

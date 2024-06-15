@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-image: radial-gradient(#dddddd 10%, transparent 10%);
-  background-position: 0% 0%;
+  background-position: center;
   background-size: 4vmin 4vmin;
 }
 
