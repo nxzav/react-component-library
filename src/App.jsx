@@ -4,6 +4,9 @@ import Section from './components/Section';
 import Badge from './components/Badges/Badge';
 import Banner from './components/Banners/Banner';
 import Card from './components/Cards/Card';
+import Testimonial from './components/Testimonials/Testimonial';
+import TestimonialNoPic from './components/Testimonials/TestimonialNoPic';
+
 import { badgeColors } from './components/Badges/colors';
 import { FaCloudArrowUp } from 'react-icons/fa6';
 import './App.css';
@@ -64,6 +67,20 @@ function App() {
                 architecto ut beatae in sint sequi, velit numquam. Facilis
                 exercitationem magnam ipsa, deserunt a dolores consequatur!
               </Card>
+            </Section>
+          </section>
+          <section id="testimonials">
+            <Section title="Testimonials">
+              <Testimonial name="Sarah Woods" position="Scrimba, CTO">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis mollitia adipisci distinctio tempora eveniet similique
+                aliquid.
+              </Testimonial>
+              <TestimonialNoPic name="Sarah Woods" position="Scrimba, CTO">
+                &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis mollitia adipisci distinctio tempora eveniet similique
+                aliquid.&quot;
+              </TestimonialNoPic>
             </Section>
           </section>
         </div>

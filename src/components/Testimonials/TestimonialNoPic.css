@@ -1,0 +1,70 @@
+.testimonial-no-pic {
+  padding: 2rem 0.5rem;
+  position: relative;
+  box-shadow: 0 0 0 1px #0002;
+}
+
+.testimonial-no-pic-content {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
+
+.testimonial-no-pic-logo {
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 2rem;
+}
+
+.testimonial-no-pic-quote {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.testimonial-no-pic-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.testimonial-no-pic-position {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.testimonial-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: 60%;
+  background: radial-gradient(#ddd 12%, transparent 12%);
+  background-size: 16px 16px;
+  background-position: center;
+  z-index: -1;
+}
+
+.divider {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .testimonial-no-pic {
+    padding: 2rem;
+  }
+  .testimonial-no-pic-content {
+    width: 60%;
+    text-align: center;
+    align-items: center;
+  }
+  .line-break {
+    display: none;
+  }
+  .divider {
+    display: inline;
+  }
+}

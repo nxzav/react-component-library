@@ -12,5 +12,19 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-image: radial-gradient(#dddddd 10%, transparent 10%);
+  background-position: 0% 0%;
+  background-size: 4vmin 4vmin;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-size: 2vmin 2vmin;
+  }
 }

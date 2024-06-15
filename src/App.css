@@ -36,6 +36,7 @@ header {
   background: #ffffffcc;
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 6px #00000010;
+  z-index: 5;
 }
 
 nav {
@@ -92,6 +93,7 @@ main {
   border-radius: 1rem;
   border: 1px solid #0002;
   box-shadow: 0 4px 0 #0002;
+  background-color: #ffffff;
 }
 
 .component-title {
@@ -116,6 +118,7 @@ footer {
   bottom: 0;
   backdrop-filter: blur(4px);
   box-shadow: 0 -1px 6px #0002;
+  z-index: 5;
 }
 
 footer a {
