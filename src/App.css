@@ -133,11 +133,10 @@ footer a {
   .navbar-backdrop {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 100%;
     height: 100%;
     width: 100%;
-    translate: 100% 0;
-    transition: translate 200ms;
+    transition: all 0.2s;
   }
   .navbar {
     position: absolute;
@@ -156,7 +155,7 @@ footer a {
     z-index: 4;
   }
   .navbar-backdrop.active {
-    translate: 0%;
+    left: 0;
   }
   nav a {
     font-size: 2rem;
@@ -189,7 +188,7 @@ footer a {
     display: flex;
   }
   .navbar-backdrop {
-    display: none;
+    display: flex;
   }
 }
 
