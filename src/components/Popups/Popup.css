@@ -1,0 +1,36 @@
+.popups-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1rem;
+}
+
+.popup {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 380px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30px 1fr;
+  row-gap: 0.5rem;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  color: #999999;
+  font-size: 0.875rem;
+}
+
+.popup > svg {
+  font-size: 1.2rem;
+}
+
+.popup-header {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .popups-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

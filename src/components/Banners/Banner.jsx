@@ -8,7 +8,7 @@ import {
 } from 'react-icons/fa6';
 import './Banner.css';
 
-function Banner({ children, message = 'Banner title', status = 'neutral' }) {
+function Banner({ children, header = 'Banner header', status = 'neutral' }) {
   const bannerIcons = {
     success: <FaCircleCheck />,
     warning: <FaTriangleExclamation />,
@@ -19,15 +19,15 @@ function Banner({ children, message = 'Banner title', status = 'neutral' }) {
     backgroundColor: bannerStatuses[status].bg,
     color: bannerStatuses[status].txt,
   };
-  const titleColor = {
+  const headerColor = {
     color: bannerStatuses[status].title,
   };
 
   return (
     <div style={contColor} className="banner">
       {bannerIcons[status]}
-      <p style={titleColor} className="banner-header">
-        {message}
+      <p style={headerColor} className="banner-header">
+        {header}
       </p>
       {children && (
         <>
